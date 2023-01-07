@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <style>
+    /* 글의 맨위, padding값. */
+    .container-top {
+      padding: 60px 10px 0;
+    }
+    /*네비게이션 바 색 조정.*/
+    .navbar{
+      /*background-color: #5864bf;*/
+        background-color: #f8f9fa;
+      color: black;
+    }
+    .navbar .navbar-brand{
+      color: black;
+    }
+    .navbar .navbar-nav .nav-link{
+      color:black;
+    }
+    span.navbar-toggler-icon{
+      color: black;
+    }
+    /*프로필 이미지 조정*/
+    .profile-box{
+      background: #ffffff;
+      width: 32px; height:32px;
+      border-radius: 70%;
+      overflow: hidden;
+    }
+    /*프로필 이미지 조정 실제크기*/
+    .profile{
+        width: 100%; height:100%;
+        object-fit: cover;
+    }
+    /*fotter의 패팅 조정 -16px py-3을 제거 class*/
+
+    /*footer 아이콘 이미지 크기 조정*/
+    .footer-icon{
+      width: 32px; height:32px;
+    }
+    /*footer 아이콘 색 조정*/
+    .icon-color{
+      color: white;
+    }
+    /*footer 배경색 조정*/
+    .navcustom{
+      background-color: #5864bf;
+    }
+
+  </style>
+</head>
+<body>
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand   fixed-top   ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">스마트팩토리</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+        <form class="d-flex" role="search">
+          <div class="fs-4"><i class="bi bi-search"></i></div>&nbsp;&nbsp;&nbsp;
+          <div class="profile-box"><img class="profile" src="img/profile_img.png"></div>
+
+        </form>
+
+    </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container container-top">
+    <!-- 캐치 프라이즈 시작-->
+    <h3 class="mt-5">일, 안전하게 합시다~. </h3>
+    <h3>좋은 하루되세요.</h3>
+
+    <!--캐치 프라이즈 끝 -->
+    <br/>
+    <!--회원의 간단한 정보 시작-->
+     <p>[회원의 아이디]</p>
+    <!--회원의 간단한 정보 끝-->
+    <br/>
+    <!-- 지역 날씨 정보 시작-->
+    <div class="row">
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">지역 날씨</h5>
+            <p class="card-text">지역 날씨 정보</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">지역 날씨</h5>
+            <p class="card-text">지역 날씨 정보</p>
+          </div>
+        </div>
+      </div>
+    <!--지역 날씨 정보 끝-->
+    <!-- 인기 있는 일 소개 -->
+
+      <!-- 인기 있는 일 소개 끝 -->
+    <!--  -->
+  </div>
+</main>
+
+<footer class="footer mt-auto navcustom fixed-bottom">
+  <div class="container">
+    <ul class="nav nav-justified">
+      <li class="nav-item">
+        <a class="nav-link icon-color" aria-current="page" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link icon-color" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+            <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"/>
+            <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link icon-color" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link icon-color" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+          </svg>
+        </a>
+      </li>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>
